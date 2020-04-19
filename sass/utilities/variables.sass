@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap')
+
+// SIZING
+  
+$root: 		  1rem
+$xs:   		  calc(#{$root}	- 8px)    // 0.5rem	  -   8px
+$sm:     	  calc(#{$root} - 4px)    // 0.75rem  -   12px
+$base:      #{$root}                // 1rem		  -   16px
+$normal:    calc(1.125 * #{$root})  // 1.125rem -   18px (p)
+$bigger:		calc(1.25 * #{$root})   // 1.25rem  -   20px (h4)
+$medium:    calc(1.5 * #{$root})    // 1.5rem	  -   24px (h3)
+$x-medium:  calc(2 * #{$root})      // 2rem		  -   32px (h2)
+$large:     calc(3 * #{$root})      // 3rem		  -   48px (h1)
+$larger:    calc(4 * #{$root})      // 4rem		  -   64px
+$x-large:   calc(6 * #{$root})      // 6rem		  -   96px
+
+// COLOURS
+
+$black:           hsl(0, 0%, 4%)
+$black-bis:       hsl(0, 0%, 7%) 
+$black-ter:       hsl(0, 0%, 14%) 
+
+$grey-darker:     hsl(0, 0%, 21%) 
+$grey-dark:       hsl(0, 0%, 29%) 
+$grey:            hsl(0, 0%, 48%) 
+$grey-light:      hsl(0, 0%, 71%) 
+$grey-lighter:    hsl(0, 0%, 86%) 
+$grey-lightest:   hsl(0, 0%, 93%) 
+
+$white-ter:       hsl(0, 0%, 96%) 
+$white-bis:       hsl(0, 0%, 98%) 
+$white:           hsl(0, 0%, 100%)
+
+$link: $grey-light
+$link-hover: $grey-dark
+
+$text: $black
+$code: $black
+
+// TYPOGRAPHY
+
+// font-family: 'Poppins', sans-serif
+// font-weight: 300 (light), 400 (regular), 500 (medium), 700 (bold)
+// font-style: normal
+
+$family-primary: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+// $family-secondary:
+$family-monospace: monospace 
+$render-mode: optimizeLegibility
+
+$weight-light:    300 
+$weight-normal:   400 
+$weight-medium:   500 
+$weight-semibold: 600 
+$weight-bold:     700
