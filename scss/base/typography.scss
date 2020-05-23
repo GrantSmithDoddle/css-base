@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: $normal;
+  font-weight: $weight-bold;
+  font-style: normal;
+  font-family: $family-primary;
+}
+
+h1,
+.h1 {
+  font-size: $lg-1;
+  line-height: 1.2;
+
+  @include respond-to("large") {
+    font-size: $lg-4;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $md-3;
+  line-height: 1.2;
+
+  @include respond-to("large") {
+    font-size: $lg-2;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $md-1;
+  line-height: 1.5;
+
+  @include respond-to("large"){
+    font-size: $md-2;
+  }
+}
+
+h4,
+.h4 {
+  font-size: $medium;
+  line-height: 1.5;
+}
+
+/* Text Size */
+.text-x-sm {
+  font-size: $sm-1;
+}
+.text-sm {
+  font-size: $sm-2;
+}
+.text-base {
+  font-size: $base;
+}
