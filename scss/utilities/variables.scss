@@ -2,24 +2,24 @@
 
 // SIZING
 
-$sm-1:     calc($base  -   8px);    // 0.5rem	   -   8px
-$sm-2:     calc($base  -   4px);    // 0.75rem    -   12px
-$sm-3:     calc($base  -   2px);    // 0.875rem   -   14px
-$base:     1rem;                    // 1rem		   -   16px
-$normal:   calc(1.125  *   $base);  // 1.125rem   -   18px
-$medium:   calc(1.25   *   $base);  // 1.25rem    -   20px
-$md-1:	   calc(1.375  *   $base);  // 1.375rem   -   22px
-$md-2:     calc(1.5    *   $base);  // 1.5rem	   -   24px
-$md-3:     calc(1.625  *   $base);  // 1.625rem   -   26px
-$md-4:     calc(1.75   *   $base);  // 1.75rem	   -   28px
-$lg-1:     calc(1.875  *   $base);  // 1.875rem	 -   30px
-$lg-2:     calc(2.25   *   $base);  // 2.25rem		 -   36px
-$lg-3:     calc(2.625  *   $base);  // 2.625rem	 -   42px
-$lg-4:     calc(3      *   $base);  // 3rem		   -   48px
-$xlg-1:    calc(3.75   *   $base);  // 3.75rem		 -   60px
-$xlg-2:    calc(4.5    *   $base);  // 4.5rem		 -   72px
-$xlg-3:    calc(5.25   *   $base);  // 5.25rem		 -   84px
-$xlg-4:    calc(6      *   $base);  // 6rem		   -   96px
+$base:     1rem;                       // 1rem		   -   16px
+$sm-1:     calc(#{$base}  -   8px);    // 0.5rem	   -   8px
+$sm-2:     calc(#{$base}  -   4px);    // 0.75rem    -   12px
+$sm-3:     calc(#{$base}  -   2px);    // 0.875rem   -   14px
+$normal:   calc(1.125  *   #{$base});  // 1.125rem   -   18px
+$medium:   calc(1.25   *   #{$base});  // 1.25rem    -   20px
+$md-1:	   calc(1.375  *   #{$base});  // 1.375rem   -   22px
+$md-2:     calc(1.5    *   #{$base});  // 1.5rem	   -   24px
+$md-3:     calc(1.625  *   #{$base});  // 1.625rem   -   26px
+$md-4:     calc(1.75   *   #{$base});  // 1.75rem	   -   28px
+$lg-1:     calc(1.875  *   #{$base});  // 1.875rem	 -   30px
+$lg-2:     calc(2.25   *   #{$base});  // 2.25rem		 -   36px
+$lg-3:     calc(2.625  *   #{$base});  // 2.625rem	 -   42px
+$lg-4:     calc(3      *   #{$base});  // 3rem		   -   48px
+$xlg-1:    calc(3.75   *   #{$base});  // 3.75rem		 -   60px
+$xlg-2:    calc(4.5    *   #{$base});  // 4.5rem		 -   72px
+$xlg-3:    calc(5.25   *   #{$base});  // 5.25rem		 -   84px
+$xlg-4:    calc(6      *   #{$base});  // 6rem		   -   96px
 
 // COLOURS
 
