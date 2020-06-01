@@ -10,47 +10,43 @@ h4 {
 
 h1,
 .h1 {
-  font-size: $lg-1;
   line-height: 1.2;
 
-  @include respond-to("large") {
-    font-size: $lg-4;
-  }
+  @include fluid-font(3vw, 2.746rem, 3.433rem, 54.94px);
 }
-
 h2,
 .h2 {
-  font-size: $md-3;
   line-height: 1.2;
 
-  @include respond-to("large") {
-    font-size: $lg-2;
-  }
+  @include fluid-font(3vw, 2.197rem, 2.746rem, 43.95px);
 }
-
 h3,
 .h3 {
-  font-size: $md-1;
   line-height: 1.5;
 
-  @include respond-to("large"){
-    font-size: $md-2;
-  }
+  @include fluid-font(3vw, 1.758rem, 2.197rem, 35.16px);
 }
-
 h4,
 .h4 {
-  font-size: $medium;
   line-height: 1.5;
-}
 
-/* Text Size */
-.text-x-sm {
-  font-size: $sm-1;
+  @include fluid-font(3vw, 1.406rem, 1.758rem, 28.13px);
 }
-.text-sm {
-  font-size: $sm-2;
+p {
+  margin-bottom: $normal;
+  font-weight: $weight-normal;
+  font-style: normal;
+  font-family: $family-primary;
+  line-height: 1.5;
+
+  @include fluid-font(3vw, 1.250rem, 1.406rem, 18px);	
 }
-.text-base {
-  font-size: $base;
-}
+.small {
+  margin-bottom: $normal;
+  font-weight: $weight-normal;
+  font-style: normal;
+  font-family: $family-primary;
+  line-height: 1.5;
+
+  @include fluid-font(3vw, 1rem, 0.8rem, 12.80px);
+  }
