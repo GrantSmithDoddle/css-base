@@ -1,26 +1,32 @@
 .hidden {
   display: block;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .block {
   display: block;
   overflow: hidden;
 }
+
 .oversized {
   margin-right: -24px;
   margin-left: -24px;
 }
+
 .content > * + * {
-  margin-top: $normal;
+  margin-top: $md;
 }
+
 picture,
 video-wrapper {
-  margin-bottom: $normal;
+  margin-bottom: $md;
 }
+
 .honeypot {
   display: none;
 }

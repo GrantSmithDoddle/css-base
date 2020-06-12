@@ -2,7 +2,7 @@ button,
 .button {
   display: inline-block;
   margin: 0;
-  padding: 9px $sm-2;
+  padding: 9px $sm;
   max-height: 43px;
   border: none;
   color: $white;
@@ -10,14 +10,13 @@ button,
   text-decoration: none;
   text-transform: capitalize;
   font-weight: $weight-light;
-  font-size: $medium;
   line-height: 1;
   cursor: pointer;
   transition: background 250ms ease-in-out, transform 150ms ease;
 
   appearance: none;
   @include respond-to("large") {
-    padding: 9px $medium;
+    padding: 9px $md;
  }
 
 }

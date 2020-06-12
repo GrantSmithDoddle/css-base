@@ -38,7 +38,7 @@ body {
   background-color: $grey-light;
   color: $text;
   font-weight: $weight-normal;
-  font-size: $normal;
+  font-size: $md;
   font-family: $family-primary;
   line-height: 1.5;
 }
@@ -76,7 +76,7 @@ input[type="radio"] {
   vertical-align: baseline;
 }
 small {
-  font-size: $sm-2;
+  font-size: $sm;
 }
 span {
   font-weight: inherit;

@@ -6,10 +6,7 @@ section {
 .container {
   position: relative;
   margin: 0 auto;
-  padding-right: $lg-4;
-  padding-right: 0;
-  padding-left: $lg-4;
-  padding-left: 0;
+  padding: 0 $lg;
   max-width: 1344px;
 }
 
