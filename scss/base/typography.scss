@@ -10,34 +10,34 @@ h4 {
 }
 
 .hero {
-  line-height: 1.2;
+  line-height: 1.25;
 
-  @include fluid-font(3vw, 3.433rem, 3.75rem, 48px);
+  @include fluid-font(3vw, 3.433rem, 4.292rem, 54.932px);
 }
 
 h1,
 .h1 {
-  line-height: 1.2;
+  line-height: 1.25;
 
-  @include fluid-font(3vw, 2.746rem, 3.433rem, 38px);
+  @include fluid-font(3vw, 2.747rem, 3.433rem, 43.945px);
 }
 h2,
 .h2 {
-  line-height: 1.2;
+  line-height: 1.25;
 
-  @include fluid-font(3vw, 2.197rem, 2.746rem, 31px);
+  @include fluid-font(3vw, 2.197rem, 2.747rem, 35.156px);
 }
 h3,
 .h3 {
-  line-height: 1.5;
+  line-height: 1.25;
 
-  @include fluid-font(3vw, 1.758rem, 2.197rem, 25px);
+  @include fluid-font(3vw, 1.758rem, 2.197rem, 28.125px);
 }
 h4,
 .h4 {
-  line-height: 1.5;
+  line-height: 1.25;
 
-  @include fluid-font(3vw, 1.406rem, 1.758rem, 20px);
+  @include fluid-font(3vw, 1.406rem, 1.758rem, 22.5px);
 }
 p {
   margin-bottom: $md;
@@ -46,7 +46,7 @@ p {
   font-family: $family-primary;
   line-height: 1.5;
 
-  @include fluid-font(3vw, 1.250rem, 1.406rem, 18px);	
+  @include fluid-font(3vw, 1.125rem, 1.406rem, 18px);	
 }
 .small {
   margin-bottom: $md;
@@ -55,5 +55,5 @@ p {
   font-family: $family-primary;
   line-height: 1.5;
 
-  @include fluid-font(3vw, 1rem, 0.8rem, 12.80px);
+  @include fluid-font(3vw, 0.738rem, 0.922rem, 11.8px);
 }
