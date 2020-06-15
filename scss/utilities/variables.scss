@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap');
-
 // SPACING
 
-$base:    1rem;                     // 16px
+$base:    1em;                     // 16px
 $xxs:     calc(0.25 * #{$base});    // 4px
 $xs:      calc(0.5  * #{$base});    // 8px
 $sm:      calc(0.75 * #{$base});    // 12px
@@ -40,7 +38,8 @@ $code: $black;
 // font-weight: 300 (light), 400 (regular), 500 (medium), 700 (bold)
 // font-style: normal
 
-$family-primary: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-primary: "Helvetica Neue", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica", "Arial", sans-serif;
+
 // $family-secondary:
 $family-monospace: monospace;
 $render-mode: optimizeLegibility;
