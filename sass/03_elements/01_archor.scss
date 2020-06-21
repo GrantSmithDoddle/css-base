@@ -1,0 +1,17 @@
+a {
+  color: $link;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-hover;
+    transition: 0.7s;
+  }
+
+  &:focus {
+    outline: 1px dashed $primary;
+    outline-offset: -4px;
+  }
+
+
+}

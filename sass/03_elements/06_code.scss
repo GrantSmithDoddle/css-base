@@ -1,0 +1,26 @@
+code {
+  padding: 0.25em 0.5em 0.25em;
+  background-color: $white-ter;
+  color: $code;
+  font-weight: normal;
+  font-size: 0.875em;
+}
+
+pre {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 1.25em 1.5em;
+  background-color: $white-ter;
+  color: $text;
+  white-space: pre;
+  word-wrap: normal;
+  font-size: 0.875em;
+
+  code {
+    padding: 0;
+    background-color: transparent;
+    color: currentColor;
+    font-size: 1em;
+  }
+  
+}

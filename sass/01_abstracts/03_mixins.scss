@@ -1,0 +1,81 @@
+// CLEARFIX //
+@mixin clearfix() {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+// BREAKPOINTS
+
+@mixin breakpoint($size) {
+  @if $size == mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if $size == tablet-portrait {
+    @media (min-width: $tablet-portrait) {
+      @content;
+    }
+  } @else if $size == tablet-landscape {
+    @media (min-width: $tablet-landscape) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  } @else if $size == lg-desktop {
+    @media (min-width: $lg-desktop) {
+      @content;
+    }
+  }
+}
+
+// TYPOGRAPHY - FLUID //
+
+@mixin fluid-font($responsive, $min, $max: false, $fallback: false) {
+  font-size: $responsive;
+
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == "vh", "height", "width");
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  @if $fallback {
+    font-size: $fallback;
+  }
+}
+
+// ANIMATIONS
+
+@mixin basic-transition($properties: (all), $duration: $transition-duration, $delay: null, $easing: $easing) {
+  transition: $value;
+
+  $value: null;
+
+  @each $prop in $properties {
+    $prop-value: append((), $prop, space);
+    $prop-value: append($prop-value, $duration, space);
+    $prop-value: append($prop-value, $easing, space);
+    $value: append($value, $prop-value, comma);
+
+    @if $delay != null {
+      $prop-value: append($prop-value, $delay, space);
+    }
+  }
+}
+
+// OVERFLOW //
+
+@mixin overflow-touch {
+  -webkit-overflow-scrolling: touch;
+}

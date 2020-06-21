@@ -1,3 +1,11 @@
+img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
 // See https://ratiobuddy.com/ for aspect ratios.
 
 .outer-1by1 {

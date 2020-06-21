@@ -15,7 +15,7 @@ button,
   transition: background 250ms ease-in-out, transform 150ms ease;
 
   appearance: none;
-  @include respond-to("large") {
+  @include breakpoint(desktop) {
     padding: 9px $md;
  }
 
@@ -42,7 +42,7 @@ button:active {
 
 .fw-mobile {
   width: 100%;
-    width: auto;
+  width: auto;
 
-  @include respond-to("large");
+  @include breakpoint(desktop);
 }

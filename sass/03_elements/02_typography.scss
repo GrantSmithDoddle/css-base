@@ -21,24 +21,28 @@ h1,
 
   @include fluid-font(3vw, 2.333em, 2.799em, 41.05px);
 }
+
 h2,
 .h2 {
   line-height: 1.2;
 
   @include fluid-font(3vw, 1.944em, 2.333em, 34.21px);
 }
+
 h3,
 .h3 {
   line-height: 1.35;
 
   @include fluid-font(3vw, 1.620em, 1.944em, 28.51px);
 }
+
 h4,
 .h4 {
   line-height: 1.35;
 
   @include fluid-font(3vw, 1.350em, 1.620em, 23.76px);
 }
+
 p {
   margin-bottom: $md;
   font-weight: $weight-normal;
@@ -48,6 +52,7 @@ p {
 
   @include fluid-font(3vw, 1.125em, 1.350em, 19.8px);
 }
+
 .small {
   margin-bottom: $md;
   font-weight: $weight-normal;
