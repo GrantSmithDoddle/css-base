@@ -15,34 +15,30 @@ button,
   transition: background 250ms ease-in-out, transform 150ms ease;
 
   appearance: none;
-  @include breakpoint(desktop) {
-    padding: 9px $md;
+
+  &:focus {
+    outline: 1px dashed $primary;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+
  }
 
-}
 .primary {
-  background: $grey;
+  background: $primary;
 
   &:hover,
   &:focus {
-    background: $grey-dark;
+    background: $primary-hover;
     color: $white;
   }
 
 }
 
-button:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
-}
-
-button:active {
-  transform: scale(0.99);
-}
-
 .fw-mobile {
   width: 100%;
   width: auto;
-
-  @include breakpoint(desktop);
 }
