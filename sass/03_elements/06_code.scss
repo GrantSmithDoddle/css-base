@@ -1,6 +1,6 @@
 code {
   padding: 0.25em 0.5em 0.25em;
-  background-color: $white-ter;
+  background-color: $grey-100;
   color: $code;
   font-weight: normal;
   font-size: 0.875em;
@@ -10,7 +10,7 @@ pre {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 1.25em 1.5em;
-  background-color: $white-ter;
+  background-color: $grey-100;
   color: $text;
   white-space: pre;
   word-wrap: normal;
@@ -22,5 +22,5 @@ pre {
     color: currentColor;
     font-size: 1em;
   }
-  
+
 }

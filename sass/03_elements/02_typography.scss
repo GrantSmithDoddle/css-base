@@ -3,7 +3,6 @@ h1,
 h2,
 h3,
 h4 {
-  margin-bottom: $md;
   font-weight: $weight-bold;
   font-style: normal;
   font-family: $family-primary;
@@ -44,13 +43,12 @@ h4,
 }
 
 p {
-  margin-bottom: $md;
   font-weight: $weight-normal;
   font-style: normal;
   font-family: $family-primary;
   line-height: 1.45;
 
-  @include fluid-font(3vw, 1.125em, 1.350em, 19.8px);
+  @include fluid-font(3vw, 1em, 1.125em, 17px);
 }
 
 .small {

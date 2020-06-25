@@ -1,8 +1,8 @@
-$content-blockquote-background-color: $grey-light;
-$content-blockquote-border-left: 5px solid $grey-dark;
+$content-blockquote-background-color: $grey-100;
+$content-blockquote-border-left: 5px solid $grey-800;
 $content-blockquote-padding: 1.25em 1.5em;
 
-$content-table-cell-border: 1px solid $grey-light;
+$content-table-cell-border: 1px solid $grey-100;
 $content-table-cell-border-width: 0 0 1px;
 $content-table-cell-padding: 0.5em 0.75em;
 $content-table-cell-heading-color: inherit;
@@ -11,11 +11,23 @@ $content-table-head-cell-color: inherit;
 $content-table-foot-cell-border-width: 2px 0 0;
 $content-table-foot-cell-color: inherit;
 
+.content > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .content > * + * {
-  margin-top: $md;
+  margin-top: $base;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  p {
+    max-width: 44ch;
+  }
 
   li + li {
     margin-top: 0.25em;

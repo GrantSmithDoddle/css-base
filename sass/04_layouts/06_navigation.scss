@@ -1,0 +1,21 @@
+header {
+  box-shadow: 0px 1px 4px $grey-100;
+
+  nav {
+    display: grid;
+    align-items: center;
+    padding: $sm $md;
+    vertical-align: baseline;
+
+    grid-template-columns: 1fr 1fr;
+
+    .nav--brand {
+      color: $black;
+      font-size: $md;
+    }
+
+    .nav--btn {
+      justify-self: end;
+    }
+  }
+}
