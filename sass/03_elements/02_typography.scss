@@ -30,6 +30,7 @@ h2,
 
 h3,
 .h3 {
+  font-weight: $weight-normal;
   line-height: 1.35;
 
   @include fluid-font(3vw, 1.620em, 1.944em, 28.51px);
@@ -43,6 +44,7 @@ h4,
 }
 
 p {
+  color: $grey-700;
   font-weight: $weight-normal;
   font-style: normal;
   font-family: $family-primary;
@@ -52,7 +54,6 @@ p {
 }
 
 .small {
-  margin-bottom: $md;
   font-weight: $weight-normal;
   font-style: normal;
   font-family: $family-primary;
