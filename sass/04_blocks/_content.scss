@@ -1,8 +1,8 @@
-$content-blockquote-background-color: $grey-100;
-$content-blockquote-border-left: 5px solid $grey-800;
+$content-blockquote-background-color: $text;
+$content-blockquote-border-left: 5px solid $text;
 $content-blockquote-padding: 1.25em 1.5em;
 
-$content-table-cell-border: 1px solid $grey-100;
+$content-table-cell-border: 1px solid $text;
 $content-table-cell-border-width: 0 0 1px;
 $content-table-cell-padding: 0.5em 0.75em;
 $content-table-cell-heading-color: inherit;
@@ -17,7 +17,7 @@ $content-table-foot-cell-color: inherit;
 }
 
 .content > * + * {
-  margin-top: $base;
+  margin-top: $size-scale-400;
 }
 
 .content {

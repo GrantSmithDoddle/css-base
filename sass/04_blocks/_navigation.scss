@@ -1,0 +1,17 @@
+nav {
+  display: grid;
+  align-items: center;
+  padding: $size-scale-300 $size-scale-600;
+  vertical-align: baseline;
+
+  grid-template-columns: 1fr 1fr;
+
+  .nav--brand {
+    color: $black;
+    font-size: $size-scale-600;
+  }
+
+  .nav--btn {
+    justify-self: end;
+  }
+}

@@ -9,10 +9,10 @@
 
 // BREAKPOINTS
 
-/// Mixin to manage responsive breakpoints
-/// @author Hugo Giraudel
-/// @param {String} $breakpoint - Breakpoint name
-/// @require $breakpoints
+// Mixin to manage responsive breakpoints
+// @author Hugo Giraudel
+// @param {String} $breakpoint - Breakpoint name
+// @require $breakpoints
 
 @mixin respond-to($breakpoint) {
   // If the key exists in the map
@@ -75,4 +75,20 @@
 
 @mixin overflow-touch {
   -webkit-overflow-scrolling: touch;
+}
+
+// COLUMNS GRID //
+@mixin columns {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 625px;
+
+  @include respond-to('medium') {
+    display: grid;
+    max-width: 100%;
+
+    grid-auto-flow: dense;
+    grid-gap: 1.5em;
+  }
 }
