@@ -4,7 +4,27 @@ fieldset {
   border: none;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=text],
+input[type=date],
+input[type=time],
+input[type=email],
+textarea,
+select {
   vertical-align: baseline;
+
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  @include fluid-font(3vw, 0.781em, 0.938em, 13.75px);
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=email]:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border: 1px solid $primary;
+  box-shadow: 0 0 5px $primary;
 }

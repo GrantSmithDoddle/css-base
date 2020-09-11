@@ -7,14 +7,14 @@ h4 {
 }
 
 .hero {
-  @include fluid-font(3vw, 2.799em, 3.359em, 49.27px);
+  @include fluid-font(3vw, 2.799rem, 3.359rem, 49.27px);
 }
 
 h1,
 .h1 {
   text-transform: uppercase;
 
-  @include fluid-font(3vw, 2.333em, 2.799em, 41.05px);
+  @include fluid-font(3vw, 2.333rem, 2.799rem, 41.05px);
 }
 
 h2,
@@ -24,19 +24,19 @@ h2,
   font-style: normal;
   line-height: $leading-tight;
 
-  @include fluid-font(3vw, 1.944em, 2.333em, 34.21px);
+  @include fluid-font(3vw, 1.944rem, 2.333rem, 34.21px);
 }
 
 h3,
 .h3 {
-  @include fluid-font(3vw, 1.620em, 1.944em, 28.51px);
+  @include fluid-font(3vw, 1.620rem, 1.944rem, 28.51px);
 }
 
 h4,
 .h4 {
-  @include fluid-font(3vw, 1.350em, 1.620em, 23.76px);
+  @include fluid-font(3vw, 1.350rem, 1.620rem, 23.76px);
 }
 
 .small {
-  @include fluid-font(3vw, 0.781em, 0.938em, 13.75px);
+  @include fluid-font(3vw, 0.781rem, 0.938rem, 13.75px);
 }
