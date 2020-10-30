@@ -9,30 +9,42 @@ $breakpoints: (
 
 // COLOURS //
 
-$primary:         #131414;
-$primary-shade:   #0B0C0C;
-$primary-glare:   #A1A1A1;
-$secondary:       #006580;
-$secondary-shade: #003D4D;
-$secondary-glare: #99C1CC;
-$tertiary:        #ff9e16;
-$tertiary-shade:  #E68E14;
-$tertiary-glare:  #FFD8A2;
-$quaternary:      #ff7f5c;
-$quaternary-shade:#f96841;
-$quaternary-glare:#fe9476;
-$quinary:         #fa576e;
-$quinary-shade:   #fc3e59;
-$quinary-glare:   #f26c7f;
+$primary:           #131414;
+$primary-shade:     #0B0C0C;
+$primary-glare:     #A1A1A1;
+$secondary:         #006580;
+$secondary-shade:   #003D4D;
+$secondary-glare:   #99C1CC;
+$tertiary:          #ff9e16;
+$tertiary-shade:    #E68E14;
+$tertiary-glare:    #FFD8A2;
+$quaternary:        #ff7f5c;
+$quaternary-shade:  #f96841;
+$quaternary-glare:  #fe9476;
+$quinary:           #fa576e;
+$quinary-shade:     #fc3e59;
+$quinary-glare:     #f26c7f;
 
-$white:           #ffffff;
-$black:           #000000;
+$white:             #ffffff;
+$black:             #000000;
 
 // Base Colours
-$body-colour: #f0f0f0;
-$link: $secondary;
-$link-hover: $secondary-shade;
-$text: #818282;
+$body-colour:       #f0f0f0;
+$link:                $secondary;
+$link-hover:          $secondary-shade;
+$text:              #818282;
+$border:              $primary-glare;
+
+// Inputs
+$warning:           #FFE74C;
+$warning-light:     #FFF9D2;
+
+$success:           #6BF178;
+$success-light:     #DAFCDD;
+
+$danger:            #fa576e;
+$danger-light:      #f26c7f;
+
 
 // FONTS //
 
