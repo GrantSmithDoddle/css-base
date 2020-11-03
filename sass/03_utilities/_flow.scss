@@ -1,4 +1,4 @@
-.flow__sm > * + * {
+.flow-sm > * + * {
   margin-top: $size-scale-400;
 }
 
@@ -6,11 +6,11 @@
   margin-top: $size-scale-600;
 }
 
-.flow_large > * + * {
+.flow-large > * + * {
   margin-top: $size-scale-900;
 }
 
-.flow__xl > * + * {
+.flow-xl > * + * {
   margin-top: 6.25rem;
 
   @include respond-to('medium'){

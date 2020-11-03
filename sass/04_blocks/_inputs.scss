@@ -99,7 +99,7 @@ select {
 
 // Check box + Radio Buttons
 
-.checkbox_cnt {
+.checkbox-cnt {
   position: relative;
   display: block;
   padding-left: 35px;
@@ -145,13 +145,13 @@ select {
 
 }
 
-.checkbox_cnt:hover input ~ .checkmark,
-.checkbox_cnt:hover input ~ .radio {
+.checkbox-cnt:hover input ~ .checkmark,
+.checkbox-cnt:hover input ~ .radio {
   background-color: $primary-glare;
 }
 
-.checkbox_cnt input:checked ~ .checkmark,
-.checkbox_cnt input:checked ~ .radio {
+.checkbox-cnt input:checked ~ .checkmark,
+.checkbox-cnt input:checked ~ .radio {
   background-color: $primary;
 }
 
@@ -161,11 +161,11 @@ select {
   content: "";
 }
 
-.checkbox_cnt input:checked ~ .checkmark:after {
+.checkbox-cnt input:checked ~ .checkmark:after {
   display: block;
 }
 
-.checkbox_cnt .checkmark:after {
+.checkbox-cnt .checkmark:after {
   top: 6px;
   left: 9px;
   width: 6px;
