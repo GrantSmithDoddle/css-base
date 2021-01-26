@@ -2,57 +2,104 @@
 
 $breakpoints: (
   'x-small': ( max-width: 500px ),
-  'small':  ( min-width: 767px ),
-  'medium': ( min-width: 1023px ),
-  'large':  ( min-width: 1399px ),
-  'xlarge': ( min-width: 1499px )
+  'small':   ( min-width: 767px ),
+  'medium':  ( min-width: 1023px ),
+  'large':   ( min-width: 1399px ),
+  'xlarge':  ( min-width: 1499px )
 ) !default;
 
 // COLOURS //
 
-$primary:           #131414;
-$primary-shade:     #0B0C0C;
-$primary-glare:     #A1A1A1;
-$secondary:         #006580;
-$secondary-shade:   #003D4D;
-$secondary-glare:   #99C1CC;
-$tertiary:          #ff9e16;
-$tertiary-shade:    #E68E14;
-$tertiary-glare:    #FFD8A2;
-$quaternary:        #ff7f5c;
-$quaternary-shade:  #f96841;
-$quaternary-glare:  #fe9476;
-$quinary:           #fa576e;
-$quinary-shade:     #fc3e59;
-$quinary-glare:     #f26c7f;
+$doddle-grey-50:      #fffefe;
+$doddle-grey-100:     #fefdfd;
+$doddle-grey-200:     #fdfaf9;
+$doddle-grey-300:     #fcf7f6;
+$doddle-grey-400:     #f9f1ef;
+$doddle-grey-500:     #f7ebe8;
+$doddle-grey-600:     #ded4d1;
+$doddle-grey-700:     #b9b0ae;
+$doddle-grey-800:     #948d8b;
+$doddle-grey-900:     #797372;
 
-$white:             #ffffff;
-$black:             #000000;
+$doddle-cyan-50:      #f2fdff;
+$doddle-cyan-100:     #e6fcff;
+$doddle-cyan-200:     #bff7ff;
+$doddle-cyan-300:     #99f2ff;
+$doddle-cyan-400:     #4de9ff;
+$doddle-cyan-500:     #00dfff;
+$doddle-cyan-600:     #00c9e6;
+$doddle-cyan-700:     #00a7bf;
+$doddle-cyan-800:     #008699;
+$doddle-cyan-900:     #006d7d;
+
+$doddle-coral-50:     #fff9f6;
+$doddle-coral-100:    #fff2ee;
+$doddle-coral-200:    #ffdfd4;
+$doddle-coral-300:    #ffccb9;
+$doddle-coral-400:    #ffa585;
+$doddle-coral-500:    #ff7f51;
+$doddle-coral-600:    #e67249;
+$doddle-coral-700:    #bf5f3d;
+$doddle-coral-800:    #994c31;
+$doddle-coral-900:    #7d3e28;
+
+$doddle-lime-50:      #f8fdf5;
+$doddle-lime-100:     #f1faeb;
+$doddle-lime-200:     #dbf4cd;
+$doddle-lime-300:     #c5edae;
+$doddle-lime-400:     #9adf72;
+$doddle-lime-500:     #6ed135;
+$doddle-lime-600:     #63bc30;
+$doddle-lime-700:     #539d28;
+$doddle-lime-800:     #427d20;
+$doddle-lime-900:     #36661a;
+
+
+$doddle-yellow-50:    #fffff2;
+$doddle-yellow-100:   #ffffe6;
+$doddle-yellow-200:   #ffffbf;
+$doddle-yellow-300:   #ffff99;
+$doddle-yellow-400:   #ffff4d;
+$doddle-yellow-500:   #ffff00;
+$doddle-yellow-600:   #e6e600;
+$doddle-yellow-700:   #bfbf00;
+$doddle-yellow-800:   #999900;
+$doddle-yellow-900:   #7d7d00;
+
+$doddle-blue-50:      #f3f4f5;
+$doddle-blue-100:     #e8e9ec;
+$doddle-blue-200:     #c4c8cf;
+$doddle-blue-300:     #a1a6b1;
+$doddle-blue-400:     #5b6477;
+$doddle-blue-500:     #14213d;
+$doddle-blue-600:     #121e37;
+$doddle-blue-700:     #0f192e;
+$doddle-blue-800:     #0c1425;
+$doddle-blue-900:     #0a101e;
+
+$white:               #ffffff;
+$black:               #000000;
 
 // Base Colours
-$body-colour:       #f0f0f0;
-$link:                $secondary;
-$link-hover:          $secondary-shade;
-$text:              #818282;
-$border:              $primary-glare;
+$body-colour:         $doddle-cyan-500;
+$link:                $doddle-blue-500;
+$link-hover:          $doddle-yellow-500;
+$text:                $doddle-blue-500;
+$border:              $doddle-blue-100;
 
 // Inputs
-$warning:           #FFE74C;
-$warning-light:     #FFF9D2;
+$warning:             #FFE74C;
+$warning-light:       #FFF9D2;
 
-$success:           #6BF178;
-$success-light:     #DAFCDD;
+$success:             #6BF178;
+$success-light:       #DAFCDD;
 
-$danger:            #fa576e;
-$danger-light:      #f26c7f;
+$danger:              #fa576e;
+$danger-light:        #f26c7f;
 
 
 // FONTS //
-
-// font-weight: 300 (light), 400 (regular), 500 (medium), 700 (bold)
-// font-style: normal
-
-$family-primary: 'Inter', sans-serif;
+$family-primary: acumin-pro-wide, sans-serif;
 
 // $family-secondary:
 $family-monospace: monospace;
@@ -60,9 +107,16 @@ $render-mode: optimizeLegibility;
 
 $light:    300;
 $normal:   400;
-$medium:   500;
-$semibold: 600;
 $bold:     700;
+
+$font-size-1: clamp(0.6944rem, 0.0366vw, 0.72rem); // x-small
+$font-size-2: clamp(0.8331rem, 0.0955vw, 0.9rem); // small
+$font-size-3: clamp(1rem, 0.1786vw, 1.125rem); // P
+$font-size-4: clamp(1.2rem, 0.2946vw, 1.4063rem); // H4
+$font-size-5: clamp(1.44rem, 0.4545vw, 1.7581rem); // H3
+$font-size-6: clamp(1.7281rem, 0.6705vw, 2.1975rem); // H2
+$font-size-7: clamp(2.0738rem, 0.9616vw, 2.7469rem); // H1
+$font-size-8: clamp(2.4881rem, 1.35vw, 3.4331rem); // HERO
 
 // SPACING //
 

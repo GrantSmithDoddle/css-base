@@ -1,4 +1,4 @@
-.flow-sm > * + * {
+.flow_sm > * + * {
   margin-top: $size-scale-400;
 }
 
@@ -6,14 +6,18 @@
   margin-top: $size-scale-600;
 }
 
-.flow-large > * + * {
+.flow_l > * + * {
   margin-top: $size-scale-900;
+}
+
+.flow_xl > * + * {
+  margin-top: 6.25rem;
 }
 
 .flow-xl > * + * {
   margin-top: 6.25rem;
 
-  @include respond-to('medium'){
+  @include breakpoint(tablet){
     margin-top: 8.75rem;
   }
 }

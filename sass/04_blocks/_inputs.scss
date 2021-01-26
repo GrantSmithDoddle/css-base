@@ -8,7 +8,7 @@ fieldset {
   display: grid;
 
   grid-template-columns: 1fr;
-  @include respond-to('medium') {
+  @include breakpoint('tablet') {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;
   }
@@ -17,7 +17,7 @@ fieldset {
 .horizontal-field > * + * {
   margin-top: $size-scale-200;
 
-  @include respond-to('medium'){
+  @include breakpoint('tablet'){
     margin-top: 0;
   }
 }
@@ -52,7 +52,7 @@ select {
   color: $text;
 
   appearance:none;
-  @include fluid-font(3vw, 0.781em, 0.938em, 13.75px);
+  font-size: $small;
 }
 
 input[type=radio] {
