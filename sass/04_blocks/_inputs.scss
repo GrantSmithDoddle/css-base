@@ -33,7 +33,7 @@ label {
   @extend .small;
 
   .require {
-    color: $primary;
+    color: $doddle-blue-500;
   }
 }
 
@@ -52,7 +52,7 @@ select {
   color: $text;
 
   appearance:none;
-  font-size: $small;
+  font-size: $font-size-2;
 }
 
 input[type=radio] {
@@ -74,7 +74,7 @@ textarea {
 }
 
 input::placeholder {
-  color: $quaternary-glare;
+  color: $doddle-cyan-500;
 }
 
 input[type=text]:focus,
@@ -85,8 +85,8 @@ input[type=radio]:focus,
 textarea:focus,
 select:focus {
   outline: none !important;
-  border: 1px solid $primary;
-  box-shadow: 0 0 5px $primary;
+  border: 1px solid $doddle-blue-500;
+  box-shadow: 0 0 5px $doddle-blue-500;
 }
 
 select {
@@ -147,12 +147,12 @@ select {
 
 .checkbox-cnt:hover input ~ .checkmark,
 .checkbox-cnt:hover input ~ .radio {
-  background-color: $primary-glare;
+  background-color: $doddle-blue-500;
 }
 
 .checkbox-cnt input:checked ~ .checkmark,
 .checkbox-cnt input:checked ~ .radio {
-  background-color: $primary;
+  background-color: $doddle-blue-500;
 }
 
 .checkmark:after {

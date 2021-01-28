@@ -1,132 +1,132 @@
 [class^="col-"] {
-    position: relative;
-    grid-column: auto / span 12;
+  position: relative;
+  grid-column: auto / span 12;
 
-    // Horizontal alignment within container
+  // Horizontal alignment within container
+  @include breakpoint(tablet) {
+    &.center { text-align: center; }
+    &.right { text-align: right; }
+  }
+
+  &.space {
+    padding: 2em 0;
+  }
+
+  // Paragraphs in container split into 2 columns
+  &.two-col {
+  column-count: 1;
+
     @include breakpoint(tablet) {
-      &.center { text-align: center; }
-      &.right { text-align: right; }
-    }
-
-    &.space {
-      padding: 2em 0;
-    }
-
-    // Paragraphs in container split into 2 columns
-    &.two-col {
-    column-count: 1;
-
-      @include breakpoint(tablet) {
-        column-count: 1;
-      }
-
-      @include breakpoint(laptop) {
-        column-count: 2;
-      }
-    }
-
-    // Paragraphs in container split into 3 columns
-    &.three-col {
       column-count: 1;
-
-      @include breakpoint(tablet) {
-        column-count: 2;
-      }
-
-      @include breakpoint(laptop) {
-        column-count: 3;
-      }
     }
 
-    img, iframe {
-      max-width: 100%;
+    @include breakpoint(laptop) {
+      column-count: 2;
     }
   }
 
-  // m-1 through m-12 column classes for mobile
-  @include breakpoint(mobile) {
-    .row,
-    .sub-row {
+  // Paragraphs in container split into 3 columns
+  &.three-col {
+    column-count: 1;
+
+    @include breakpoint(tablet) {
+      column-count: 2;
+    }
+
+    @include breakpoint(laptop) {
+      column-count: 3;
+    }
+  }
+
+  img, iframe {
+    max-width: 100%;
+  }
+}
+
+// m-1 through m-12 column classes for mobile
+@include breakpoint(mobile) {
+  .row,
+  .sub-row {
+    @for $i from 1 through 12 {
+      .m-#{$i} {
+        grid-column: auto / span $i;
+        display: block;
+      }
+
+      .m-0 {
+        display: none;
+      }
+    }
+  }
+}
+
+// t-1 through t-12 column classes for tablet
+@include breakpoint(tablet) {
+  .row,
+  .sub-row {
+    @for $s from 1 through 12 {
       @for $i from 1 through 12 {
-        .m-#{$i} {
+        .t-#{$i} {
           grid-column: auto / span $i;
           display: block;
         }
 
-        .m-0 {
+        .t-#{$s}-#{$i} {
+          grid-column: ($s + 1) / span $i;
+          display: block;
+        }
+
+        .t-0 {
           display: none;
         }
       }
     }
   }
+}
 
-  // t-1 through t-12 column classes for tablet
-  @include breakpoint(tablet) {
-    .row,
-    .sub-row {
-      @for $s from 1 through 12 {
-        @for $i from 1 through 12 {
-          .t-#{$i} {
-            grid-column: auto / span $i;
-            display: block;
-          }
+// l-1 through l-12 column classes for laptop
+@include breakpoint(laptop) {
+  .row, .sub-row {
+    @for $s from 1 through 12 {
+      @for $i from 1 through 12 {
+        .l-#{$i} {
+          grid-column: auto / span $i;
+          display: block;
+        }
 
-          .t-#{$s}-#{$i} {
-            grid-column: ($s + 1) / span $i;
-            display: block;
-          }
+        .l-#{$s}-#{$i} {
+          grid-column: ($s + 1) / span $i;
+          display: block;
+        }
 
-          .t-0 {
-            display: none;
-          }
+        .l-0 {
+          display: none;
         }
       }
     }
   }
+}
 
-  // l-1 through l-12 column classes for laptop
-  @include breakpoint(laptop) {
-    .row, .sub-row {
-      @for $s from 1 through 12 {
-        @for $i from 1 through 12 {
-          .l-#{$i} {
-            grid-column: auto / span $i;
-            display: block;
-          }
+// col-1 through col-12 for default desktop
+@include breakpoint(desktop) {
+  .row,
+  .sub-row {
+    @for $s from 1 through 12 {
+      @for $i from 1 through 12 {
+        .col-#{$i} {
+          grid-column: auto / span $i;
+          display: block;
+        }
 
-          .l-#{$s}-#{$i} {
-            grid-column: ($s + 1) / span $i;
-            display: block;
-          }
+        .col-#{$s}-#{$i} {
+          grid-column: ($s + 1) / span $i;
+          display: block;
+        }
 
-          .l-0 {
-            display: none;
-          }
+        .col-0 {
+          display: none;
         }
       }
     }
   }
-
-  // col-1 through col-12 for default desktop
-  @include breakpoint(desktop) {
-    .row,
-    .sub-row {
-      @for $s from 1 through 12 {
-        @for $i from 1 through 12 {
-          .col-#{$i} {
-            grid-column: auto / span $i;
-            display: block;
-          }
-
-          .col-#{$s}-#{$i} {
-            grid-column: ($s + 1) / span $i;
-            display: block;
-          }
-
-          .col-0 {
-            display: none;
-          }
-        }
-      }
-    }
-  }
+}

@@ -4,7 +4,6 @@
 @import "02_base/reset";
 @import "02_base/base";
 
-@import '03_utilities/auto-grid';
 @import '03_utilities/columns';
 @import '03_utilities/flow';
 @import '03_utilities/panel';
@@ -17,10 +16,10 @@
 @import '04_blocks/buttons';
 @import '04_blocks/content';
 @import '04_blocks/footer';
+@import '04_blocks/header';
 @import '04_blocks/hr';
 @import '04_blocks/images';
 @import '04_blocks/maps';
 @import '04_blocks/inputs';
 @import '04_blocks/main';
-@import '04_blocks/navigation';
 @import '04_blocks/transition';

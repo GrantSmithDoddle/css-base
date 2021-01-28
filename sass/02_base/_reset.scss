@@ -1,11 +1,3 @@
-// DEBUG :) //
-// *,
-// * *,
-// * * *,
-// * * * * {
-//   outline: 1px solid red;
-// }
-
 /* Box sizing rules */
 *,
 *::before,
@@ -54,11 +46,6 @@ ol[class] {
 /* Scroll Margin*/
 [id] {
   scroll-margin-top: 2ex;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */

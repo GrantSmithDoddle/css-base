@@ -104,7 +104,7 @@ $content-table-foot-cell-color: inherit;
     white-space: pre;
     word-wrap: normal;
 
-    @include overflow_touch;
+    @include overflow-touch;
   }
 
   sup,

@@ -1,47 +1,48 @@
 // Global styles start
 
 body {
-    background: $body-colour;
-    color: $text;
-    font-family: $family-primary;
-    line-height: $leading-loose;
-
-    @include fluid-font(3vw, 1em, 1.125em, 17px);
-    text-rendering: optimizeSpeed;
-    &.no-scroll {
-      overflow: hidden;
-    }
+  background: $body-colour;
+  color: $text;
+  font-family: $family-primary;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size-3;
+  line-height: $leading-loose;
+  text-rendering: optimizeSpeed;
+  &.noScroll {
+    overflow: hidden;
   }
+}
 
-  /* A elements that don't have a class get default styles */
-  a:not([class]) {
-    color: $secondary;
-    text-decoration-skip-ink: auto;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  color: $doddle-lime-500;
+  text-decoration-skip-ink: auto;
 
-    &:hover {
-      color: $secondary-shade;
-      transition: 0.3s;
-    }
+  &:hover {
+    color: $doddle-lime-500;
+    @include transition;
   }
+}
 
-  :focus {
-    outline: 2px dashed $link;
-    outline-offset: 0.25rem;
-  }
+:focus {
+  outline: 2px dashed $link;
+  outline-offset: 0.25rem;
+}
 
-  main:focus {
-    outline: none;
-  }
+main:focus {
+  outline: none;
+}
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: 900;
-    line-height: $leading-flat;
-  }
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+  line-height: $leading-flat;
+}
 
-  ::selection {
-    background: $secondary-glare;
-    color: $black;
-  }
+::selection {
+  background: $doddle-lime-500;
+  color: $black;
+}

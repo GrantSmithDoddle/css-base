@@ -1,0 +1,19 @@
+header {
+  background-color: transparent;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  flex-shrink: 0;
+
+  .brand {
+    display: inline;
+    width: 125px;
+    height: 22px;
+  }
+
+  .header_phone {
+    color: $doddle-blue-500;
+    font-weight: 400;
+    font-size: $font-size-3;
+    line-height: 18px;
+  }
+}
