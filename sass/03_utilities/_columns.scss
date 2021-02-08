@@ -2,10 +2,12 @@
   position: relative;
   grid-column: auto / span 12;
 
-  // Horizontal alignment within container
-  @include breakpoint(tablet) {
-    &.center { text-align: center; }
-    &.right { text-align: right; }
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
   }
 
   &.space {
@@ -43,40 +45,37 @@
   }
 }
 
-// m-1 through m-12 column classes for mobile
-@include breakpoint(mobile) {
-  .row,
-  .sub-row {
-    @for $i from 1 through 12 {
-      .m-#{$i} {
-        grid-column: auto / span $i;
-        display: block;
-      }
+.row,
+.sub-row {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      grid-column: auto / span $i;
+      display: block;
+    }
 
-      .m-0 {
-        display: none;
-      }
+    .col-0 {
+      display: none;
     }
   }
 }
 
-// t-1 through t-12 column classes for tablet
+// col-t-1 through col-t-12 column classes for tablet
 @include breakpoint(tablet) {
   .row,
   .sub-row {
     @for $s from 1 through 12 {
       @for $i from 1 through 12 {
-        .t-#{$i} {
+        .col-t-#{$i} {
           grid-column: auto / span $i;
           display: block;
         }
 
-        .t-#{$s}-#{$i} {
+        .col-t-#{$s}-#{$i} {
           grid-column: ($s + 1) / span $i;
           display: block;
         }
 
-        .t-0 {
+        .col-t-0 {
           display: none;
         }
       }
@@ -84,22 +83,22 @@
   }
 }
 
-// l-1 through l-12 column classes for laptop
+// col-l-1 through col-l-12 column classes for laptop
 @include breakpoint(laptop) {
   .row, .sub-row {
     @for $s from 1 through 12 {
       @for $i from 1 through 12 {
-        .l-#{$i} {
+        .col-l-#{$i} {
           grid-column: auto / span $i;
           display: block;
         }
 
-        .l-#{$s}-#{$i} {
+        .col-l-#{$s}-#{$i} {
           grid-column: ($s + 1) / span $i;
           display: block;
         }
 
-        .l-0 {
+        .col-l-0 {
           display: none;
         }
       }
@@ -107,23 +106,23 @@
   }
 }
 
-// col-1 through col-12 for default desktop
+// col-d-1 through col-d-12 for default desktop
 @include breakpoint(desktop) {
   .row,
   .sub-row {
     @for $s from 1 through 12 {
       @for $i from 1 through 12 {
-        .col-#{$i} {
+        .col-d-#{$i} {
           grid-column: auto / span $i;
           display: block;
         }
 
-        .col-#{$s}-#{$i} {
+        .col-d-#{$s}-#{$i} {
           grid-column: ($s + 1) / span $i;
           display: block;
         }
 
-        .col-0 {
+        .col-d-0 {
           display: none;
         }
       }
