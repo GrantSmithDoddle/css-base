@@ -8,13 +8,11 @@
 }
 
 // OVERFLOW //
-
 @mixin overflow-touch {
   -webkit-overflow-scrolling: touch;
 }
 
 // TRANSITION
-
 @mixin transition {
   transition-duration: .4s;
   transition-timing-function: ease;

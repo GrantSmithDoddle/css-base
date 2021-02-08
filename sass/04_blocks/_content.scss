@@ -27,10 +27,13 @@ $content-table-foot-cell-color: inherit;
 
   p {
     max-width: 44ch;
+    font-size: $font-size-3;
   }
 
-  li + li {
-    margin-top: 0.25em;
+  p,
+  li,
+  a {
+    line-height: $leading-loose;
   }
 
   blockquote {
